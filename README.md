@@ -46,7 +46,7 @@ Those who wish to use previous COLIEE data for a trial, please contact rabelo(at
 
 [3] [ICAIL '21: Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law](https://dl.acm.org/doi/10.1145/3462757.3466103)
 
-[4] [Proceedings of the Eigth International Competition on Legal Information Extraction/Entailment] (https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf)
+[4] [Proceedings of the Eigth International Competition on Legal Information Extraction/Entailment](https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf)
 
 
 ## How do I cite this work?
