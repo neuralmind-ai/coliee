@@ -38,7 +38,7 @@ Based on those results, we question the common assumption that it is necessary t
 Those who wish to use previous COLIEE data for a trial, please contact rabelo(at)ualberta.ca.
 
 
-## How do I evaluate the model?
+## How do I evaluate?
 
 As our best model is a zero-shot one, we provide only the evaluation script.
 - [Evaluation notebook](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
