@@ -30,7 +30,7 @@ In this table, we present the results. Our main finding is that our zero-shot mo
 
 ## Conclusion
 
-Based on those results, we question the common assumption that it is necessary to have labeled training data on the target language or target domain to perform well on a task. Our results suggest that fine-tuning on a large labeled dataset may be enough for both cases.
+Based on those results, we question the common assumption that it is necessary to have labeled training data on the target domain to perform well on a task. Our results suggest that fine-tuning on a large labeled dataset may be enough.
 
 
 ## How do I get the dataset?
