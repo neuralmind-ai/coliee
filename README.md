@@ -89,21 +89,21 @@ As our best model is a zero-shot one, we provide only the evaluation script.
 ## How do I cite this work?
 
 ~~~ {.xml
- @article{to_tune,
-    title={To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment},
-    author={Moraes, Guilherme and Rodrigues, Ruan and Lotufo, Roberto and Nogueira, Rodrigo},
-    journal={ICAIL '21: Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law June 2021 Pages 295–300},
-    url={https://dl.acm.org/doi/10.1145/3462757.3466103},
-    year={2021}
-}
-~~~
-
-~~~ {.xml
  @article{bm25_baseline,
     title={Yes, BM25 is a Strong Baseline for Legal Case Retrieval},
     author={Moraes, Guilherme and Rodrigues, Ruan and Lotufo, Roberto and Nogueira, Rodrigo},
     journal={Proceedings of the Eighth International Competition on Legal Information Extraction/Entailment},
     url={https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf},
+    year={2021}
+}
+~~~
+
+~~~ {.xml
+ @article{to_tune,
+    title={To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment},
+    author={Moraes, Guilherme and Rodrigues, Ruan and Lotufo, Roberto and Nogueira, Rodrigo},
+    journal={ICAIL '21: Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law June 2021 Pages 295–300},
+    url={https://dl.acm.org/doi/10.1145/3462757.3466103},
     year={2021}
 }
 ~~~
