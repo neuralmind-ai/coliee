@@ -2,7 +2,8 @@
 
 This repository contains the code to reproduce NeuralMind's submissions to COLIEE 2021 presented in papers [Yes, BM25 is a Strong Baseline for Legal Case Retrieval](https://arxiv.org/abs/2105.05686) (Task 1) and [To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment](https://arxiv.org/abs/2202.03120) (Task 2). 
 
-COLIEE is a legal case competition that evaluates automated systems on legal tasks and focuses on two aspects of legal information processing related to a database of predominantly Federal Court of Canada case laws.
+COLIEE is a legal case competition that evaluates automated systems on legal tasks.
+
 
 # Task 1: Legal Case Retrieval
 
