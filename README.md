@@ -107,3 +107,6 @@ As our best model is a zero-shot one, we provide only the evaluation script.
     year={2021}
 }
 ~~~
+
+## Contact
+If you have any questions, please email guilhermemr04@gmail.com.
