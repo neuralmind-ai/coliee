@@ -1,7 +1,37 @@
-# COLIEE 2021 - task 2: Legal Case Entailment
+# COLIEE 2021 
 
-This repository contains the code to reproduce NeuralMind's submissions to COLIEE 2021 presented in the paper [To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment](https://dl.acm.org/doi/10.1145/3462757.3466103). There has been mounting evidence that pretrained language models fine-tuned on large and diverse supervised datasets can transfer well to a variety of out-of-domain tasks. In this work, we investigate this transfer ability to the legal domain. For that, we participated in the legal case entailment task of COLIEE 2021, in which we use such models with no adaptations to the target domain. Our submissions achieved the highest scores, surpassing the second-best submission by more than six percentage points. Our experiments confirm a counter-intuitive result in the new paradigm of pretrained language models: that given limited labeled data, models with little or no adaption to the target task can be more robust to changes in the data distribution and perform better on held-out datasets than models fine-tuned on it.
+This repository contains the code to reproduce NeuralMind's submissions to COLIEE 2021 presented in papers [Yes, BM25 is a Strong Baseline for Legal Case Retrieval](https://arxiv.org/abs/2105.05686) and [To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment](https://arxiv.org/abs/2202.03120). 
 
+COLIEE is a legal case competition that evaluates automated systems on legal tasks and focuses on two aspects of legal information processing related to a database of predominantly Federal Court of Canada case laws.
+
+# Task 1: Legal Case Retrieval
+
+The task of Legal Case Retrieval involves reading a new case Q, and extracting supporting cases S1, S2, ... Sn for the decision of Q from the entire case law corpus. The dataset for task 1 is composed of predominantly Federal Court of Canada case laws, and it is provided as a pool of cases containing 4415 documents. The input is an unseen legal case, and the output is the relevant cases extracted from the pool that support the decision of the input case.
+
+
+## Results
+
+|               Model                    |      F1       | 
+| ---------------------------------------| ------------- | 
+| Median of submissions in competition   |     2.79      |
+| 3rd best submission of competition     |     4.56      |
+| BM25  (ours)                           |     9.37      |
+| Best submission of competition         |    19.17      |
+
+Our vanilla BM25 is a good baseline for the task as it achieves second place in the competition and its F1 score is well above the median of submissions. This result is
+not a surprise since it agrees with results from other competitions, such as the Health Misinformation and Precision Medicine tracks of TREC 2020 [13]. The advantage of our approach is the simplicity of our method, requiring only the document’s segmentation and the grid search. One of the disadvantages is the time spent during the retrieval of segmented documents
+
+
+# Task 2: Legal Case Entailment
+
+The task of Legal Case Entailment involves the identification of a paragraph from existing cases that entails the decision of a new case.
+
+Given a decision Q of a new case and a relevant case R, a specific paragraph that entails the decision Q needs to be identified. This task requires one to identify a paragraph which entails the decision of Q, so a specific entailment method is required which compares the meaning of each paragraph in R and Q in this task.
+
+
+## To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment
+
+In this work, we investigate this transfer ability to the legal domain. For that, we participated in the legal case entailment task of COLIEE 2021, in which we use such models with no adaptations to the target domain. Our submissions achieved the highest scores, surpassing the second-best submission by more than six percentage points. Our experiments confirm a counter-intuitive result in the new paradigm of pretrained language models: that given limited labeled data, models with little or no adaption to the target task can be more robust to changes in the data distribution and perform better on held-out datasets than models fine-tuned on it.
 
 ## Models
 
@@ -41,7 +71,8 @@ Those who wish to use previous COLIEE data for a trial, please contact rabelo(at
 ## How do I evaluate?
 
 As our best model is a zero-shot one, we provide only the evaluation script.
-- [Evaluation notebook](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
+- [Task 1](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
+- [Task 2](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
 
 
 ## References
@@ -52,7 +83,7 @@ As our best model is a zero-shot one, we provide only the evaluation script.
 
 [3] [ICAIL '21: Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law](https://dl.acm.org/doi/10.1145/3462757.3466103)
 
-[4] [Proceedings of the Eigth International Competition on Legal Information Extraction/Entailment](https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf)
+[4] [Proceedings of the Eighth International Competition on Legal Information Extraction/Entailment](https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf)
 
 
 ## How do I cite this work?
@@ -63,6 +94,16 @@ As our best model is a zero-shot one, we provide only the evaluation script.
     author={Moraes, Guilherme and Rodrigues, Ruan and Lotufo, Roberto and Nogueira, Rodrigo},
     journal={ICAIL '21: Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law June 2021 Pages 295–300},
     url={https://dl.acm.org/doi/10.1145/3462757.3466103},
+    year={2021}
+}
+~~~
+
+~~~ {.xml
+ @article{bm25_baseline,
+    title={Yes, BM25 is a Strong Baseline for Legal Case Retrieval},
+    author={Moraes, Guilherme and Rodrigues, Ruan and Lotufo, Roberto and Nogueira, Rodrigo},
+    journal={Proceedings of the Eighth International Competition on Legal Information Extraction/Entailment}},
+    url={https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf},
     year={2021}
 }
 ~~~
