@@ -1,6 +1,6 @@
 # COLIEE 2021 
 
-This repository contains the code to reproduce NeuralMind's submissions to COLIEE 2021 presented in papers [Yes, BM25 is a Strong Baseline for Legal Case Retrieval](https://arxiv.org/abs/2105.05686) and [To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment](https://arxiv.org/abs/2202.03120). 
+This repository contains the code to reproduce NeuralMind's submissions to COLIEE 2021 presented in papers [Yes, BM25 is a Strong Baseline for Legal Case Retrieval](https://arxiv.org/abs/2105.05686) (Task 1) and [To Tune or Not To Tune? Zero-shot Models for Legal Case Entailment](https://arxiv.org/abs/2202.03120) (Task 2). 
 
 COLIEE is a legal case competition that evaluates automated systems on legal tasks and focuses on two aspects of legal information processing related to a database of predominantly Federal Court of Canada case laws.
 
@@ -71,8 +71,8 @@ Those who wish to use previous COLIEE data for a trial, please contact rabelo(at
 ## How do I evaluate?
 
 As our best model is a zero-shot one, we provide only the evaluation script.
-- [Task 1](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
-- [Task 2](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
+- [Task 1 notebook](https://colab.research.google.com/drive/1WLXdj9L4QqLu33qQZsKF8U-zuLUzRp3C?usp=sharing) (Test set 2021)
+- [Task 2 notebook](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
 
 
 ## References
@@ -102,7 +102,7 @@ As our best model is a zero-shot one, we provide only the evaluation script.
  @article{bm25_baseline,
     title={Yes, BM25 is a Strong Baseline for Legal Case Retrieval},
     author={Moraes, Guilherme and Rodrigues, Ruan and Lotufo, Roberto and Nogueira, Rodrigo},
-    journal={Proceedings of the Eighth International Competition on Legal Information Extraction/Entailment}},
+    journal={Proceedings of the Eighth International Competition on Legal Information Extraction/Entailment},
     url={https://sites.ualberta.ca/~rabelo/COLIEE2021/COLIEE2021proceedings.pdf},
     year={2021}
 }
