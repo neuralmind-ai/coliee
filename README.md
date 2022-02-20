@@ -72,7 +72,7 @@ Those who wish to use previous COLIEE data for a trial, please contact rabelo(at
 ## How do I evaluate?
 
 As our best model is a zero-shot one, we provide only the evaluation script.
-- [Task 1 notebook](https://colab.research.google.com/drive/1WLXdj9L4QqLu33qQZsKF8U-zuLUzRp3C?usp=sharing) (Test set 2021)
+- [Task 1 notebook](https://colab.research.google.com/drive/1jFew3w-aGu0mp8iVB78IjpTVm3W5w-Pl?usp=sharing) (Test set 2021)
 - [Task 2 notebook](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
 
 
