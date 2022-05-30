@@ -101,7 +101,7 @@ As our best model is a zero-shot one, we provide only the evaluation script.
 - [Task 1 notebook](https://colab.research.google.com/drive/1jFew3w-aGu0mp8iVB78IjpTVm3W5w-Pl?usp=sharing) (Test set 2021)
 - [Task 2 notebook](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
 
-To reproduce our COLIEE 2022 results, use the Task 2 notebook above but with the [monoT5-3B model](https://huggingface.co/castorini/monot5-3b-msmarco-10k) and COLIEE 2022 dataset.
+To reproduce our COLIEE 2022 results, use the Task 2 notebook above but with the [monoT5-3B model](https://huggingface.co/castorini/monot5-3b-msmarco-10k) and the COLIEE 2022 dataset.
 
 ## References
 
