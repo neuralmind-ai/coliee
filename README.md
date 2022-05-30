@@ -70,7 +70,7 @@ This repository contains the code to reproduce NeuralMind's submissions to COLIE
 ## Billions of Parameters Are Worth More Than In-domain Training Data: A case study in the Legal Case Entailment Task
 
 Recent work has shown that language models scaled to billions of parameters, such as GPT-3, perform remarkably well in zero-shot and few-shot scenarios. In this work, we experiment with zero-shot models in the legal case entailment task of the COLIEE 2022 competition. 
-Our experiments show that scaling the number of parameters in a language model improves the F1 score of our previous zero-shot result by more than 6 points, suggesting that stronger zero-shot capability may be a characteristic of larger models, at least for this task. Our 3B-parameter zero-shot model outperforms all models, including ensembles, in the COLIEE 2021 test set and also achieves the best performance of a single model in the COLIEE 2022 competition, second only to the ensemble composed of the 3B model itself and a smaller version of the same model. Despite the challenges posed by large language models, mainly due to latency constraints in real-time applications, we provide a demonstration of our zero-shot monoT5-3b model being used in production as a search engine, including for legal documents. The demo of our system are available at neuralsearchx.neuralmind.ai[https://neuralsearchx.neuralmind.ai].
+Our experiments show that scaling the number of parameters in a language model improves the F1 score of our previous zero-shot result by more than 6 points, suggesting that stronger zero-shot capability may be a characteristic of larger models, at least for this task. Our 3B-parameter zero-shot model outperforms all models, including ensembles, in the COLIEE 2021 test set and also achieves the best performance of a single model in the COLIEE 2022 competition, second only to the ensemble composed of the 3B model itself and a smaller version of the same model. Despite the challenges posed by large language models, mainly due to latency constraints in real-time applications, we provide a demonstration of our zero-shot monoT5-3b model being used in production as a search engine, including for legal documents. The demo of our system are available at [neuralsearchx.neuralmind.ai](https://neuralsearchx.neuralmind.ai).
 
 ## Results
 
@@ -101,7 +101,7 @@ As our best model is a zero-shot one, we provide only the evaluation script.
 - [Task 1 notebook](https://colab.research.google.com/drive/1jFew3w-aGu0mp8iVB78IjpTVm3W5w-Pl?usp=sharing) (Test set 2021)
 - [Task 2 notebook](https://colab.research.google.com/drive/1bB4YiJm7_de0bsPJOWv9V0HYGj8_IzwU?usp=sharing) (Test set 2021)
 
-To reproduce our COLIEE 2022 results, use the Task 2 notebook above but with the monoT5-3B model[https://huggingface.co/castorini/monot5-3b-msmarco-10k] and COLIEE 2022 dataset.
+To reproduce our COLIEE 2022 results, use the Task 2 notebook above but with the [monoT5-3B model](https://huggingface.co/castorini/monot5-3b-msmarco-10k) and COLIEE 2022 dataset.
 
 ## References
 
