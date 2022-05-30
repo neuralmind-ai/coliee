@@ -63,6 +63,32 @@ In this table, we present the results. Our main finding is that our zero-shot mo
 
 Based on those results, we question the common assumption that it is necessary to have labeled training data on the target domain to perform well on a task. Our results suggest that fine-tuning on a large labeled dataset may be enough.
 
+# COLIEE 2022 
+
+This repository contains the code to reproduce NeuralMind's submissions to COLIEE 2022 presented in the paper [Billions of Parameters Are Worth More Than In-domain Training Data: A case study in the Legal Case Entailment Task](https://arxiv.org/abs/2105.05686) (Task 2)
+
+## Billions of Parameters Are Worth More Than In-domain Training Data: A case study in the Legal Case Entailment Task
+
+Recent work has shown that language models scaled to billions of parameters, such as GPT-3, perform remarkably well in zero-shot and few-shot scenarios. In this work, we experiment with zero-shot models in the legal case entailment task of the COLIEE 2022 competition. 
+Our experiments show that scaling the number of parameters in a language model improves the F1 score of our previous zero-shot result by more than 6 points, suggesting that stronger zero-shot capability may be a characteristic of larger models, at least for this task. Our 3B-parameter zero-shot model outperforms all models, including ensembles, in the COLIEE 2021 test set and also achieves the best performance of a single model in the COLIEE 2022 competition, second only to the ensemble composed of the 3B model itself and a smaller version of the same model. Despite the challenges posed by large language models, mainly due to latency constraints in real-time applications, we provide a demonstration of our zero-shot monoT5-3b model being used in production as a search engine, including for legal documents. The demo of our system are available at neuralsearchx.neuralmind.ai[https://neuralsearchx.neuralmind.ai].
+
+## Results
+
+| Model                           |  Train data   |   Evaluation    |     F1       | Description
+| ------------------------------- | ------------- | --------------- | ------------ | ------------ | 
+| Median of submissions           |               |     Coliee      |    63.91     |              |
+| monoT5-base-zero-shot (ours)    |   MS Marco    |     Coliee      |    63.25     | Single model |
+| Coliee 2nd best team            |               |     Coliee      |    66.94     |              |
+| monoT5-3B-zero-shot  (ours)     |   MS Marco    |     Coliee      |    67.57     | Single model |
+| monoT5-Ensemble-zero-shot (ours)|   MS Marco    |     Coliee      |    67.83     |   Ensemble   |
+
+For the COLIEE 2022 competition, we submitted three runs using different sizes of monoT5-zero-shot models: a monoT5-base (row 2), a monoT5-3B (row 4) and an ensemble between monoT5-base and monoT5-3B (row 5). Performance consistently increases with model size and two of our submissions (rows 4 and 5) score above the median of submissions and above all teams in the competition. 
+Furthermore, our ensemble method effectively combines the predictions of different monoT5 models, achieving the best performance among all submissions (row 5).
+
+## Conclusion
+
+In this work, we explored the zero-shot ability of a multi-billion parameter language model in the legal domain. We showed that, for the legal case entailment task, language models without any fine-tuning on the target dataset and target domain can outperform models fine-tuned on the task itself. Furthermore, our results support the hypothesis that scaling language models to billions of parameters improves zero-shot performance. This method has the potential to be extended to other legal tasks, such as legal information retrieval and legal question answering, especially in limited annotated data scenarios.
+
 
 ## How do I get the dataset?
 
@@ -109,5 +135,15 @@ As our best model is a zero-shot one, we provide only the evaluation script.
 }
 ~~~
 
+~~~ {.xml
+ @article{coliee_2022_NM,
+    title={Billions of Parameters Are Worth More Than In-domain Training Data: A case study in the Legal Case Entailment Task},
+    author={Moraes, Guilherme and Bonifacio, Luiz and Jeronymo, Vitor and Lotufo, Roberto and Nogueira, Rodrigo},
+    journal={Proceedings of the Sixteenth International Workshop on Juris-informatics (JURISIN 2022)},
+    url={},
+    year={2022}
+}
+~~~
+
 ## Contact
-If you have any questions, please email guilhermemr04@gmail.com.
+If you have any questions, please email guilhermemr04@gmail.com
