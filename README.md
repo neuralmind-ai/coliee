@@ -139,7 +139,7 @@ To reproduce our COLIEE 2022 results, use the Task 2 notebook above but with the
 ~~~ {.xml
  @article{coliee_2022_NM,
     title={Billions of Parameters Are Worth More Than In-domain Training Data: A case study in the Legal Case Entailment Task},
-    author={Moraes, Guilherme and Bonifacio, Luiz and Jeronymo, Vitor and Lotufo, Roberto and Nogueira, Rodrigo},
+    author={Rosa, Guilherme and Bonifacio, Luiz and Jeronymo, Vitor and Lotufo, Roberto and Nogueira, Rodrigo},
     journal={Proceedings of the Sixteenth International Workshop on Juris-informatics (JURISIN 2022)},
     url={},
     year={2022}
